@@ -1,0 +1,38 @@
+// import { FollowUpItem, FollowUpData } from './path-to-your-interfaces-file';
+
+// // Функция для генерации случайных данных для FollowUpItem
+// function generateRandomFollowUpItem(title: string): FollowUpItem {
+//   const descriptions = [
+//     '~P3T3 8:00AM',
+//     '~P3T3 9:00AM',
+//     '~P3T3 10:00AM',
+//     '~P3T3 11:00AM',
+//     '~P3T3 12:00PM',
+//     '~P3T3 1:00PM',
+//     '~P3T3 2:00PM',
+//     '~P3T3 3:00PM',
+//     '~P3T3 4:00PM',
+//   ];
+//   const randomDescription = descriptions[Math.floor(Math.random() * descriptions.length)];
+//   return {
+//     title,
+//     description: `${randomDescription} ~${title.split(' ')[0]} ${randomDescription}`,
+//   };
+// }
+
+// // Функция для генерации данных типа FollowUpData
+// function generateRandomFollowUpData(): FollowUpData {
+//   const titlesToday = ['Alex Johnson', 'Lucas Brown', 'Emma Wilson', 'Sophia Martinez', 'James Taylor'];
+//   const titlesWeek = ['Michael Scott', 'Natalie Green', 'David King', 'Olivia Harris', 'Emily Clark'];
+
+//   const today: FollowUpItem[] = titlesToday.map(title => generateRandomFollowUpItem(title));
+//   const week: FollowUpItem[] = titlesWeek.map(title => generateRandomFollowUpItem(title));
+
+//   return { today, week };
+// }
+
+// // Генерация массива из пятнадцати объектов
+// const mockData = Array.from({ length: 15 }, (_, index) => ({
+//   id: index + 1,
+//   data: generateRandomFollowUpData(),
+// }));
